@@ -1,31 +1,36 @@
 body {
   font-family: "Montserrat";
+  text-align: center;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat";
+}
+
+/********* CLASS ***********/
+
+.btn-footer {
+}
+
+.big-heading {
   font-family: "Montserrat";
   font-size: 3.5rem;
   line-height: 1.5;
   font-weight: 900;
 }
 
-h2 {
-  font-family: "Montserrat";
-  font-size: 3.5rem;
-  line-height: 1.5;
-  font-weight: 700;
+.colored-section {
+  background-color: #ff4c68;
+  color: white;
 }
-
-h3 {
-  font-family: "Montserrat";
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-/********* CLASS ***********/
 
 .container-fluid {
-  padding: 3% 15% 7%;
+  padding: 7% 15%;
 }
 
 .carousel-item {
@@ -38,7 +43,6 @@ h3 {
 
 .feature-item {
   padding: 5%;
-  text-align: center;
 }
 
 .feature-item-desc {
@@ -52,6 +56,20 @@ h3 {
 
 .feature-icon:hover {
   color: #ff4c68;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.footer-copyright {
+  padding-top: 1%;
+}
+
+.footer-icon {
+  color: black;
+  padding: 0 0.5%;
 }
 
 .navbar {
@@ -80,18 +98,35 @@ h3 {
 }
 
 .price-card {
-  text-align: center;
   size: 100%;
+}
+
+.price-text {
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 700;
 }
 
 .pricing-column {
   padding: 3% 2%;
 }
 
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
 .testimonial-image {
   width: 10%;
   border-radius: 100%;
   margin: 20px;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 700;
 }
 
 .title-image {
@@ -101,18 +136,18 @@ h3 {
   margin-top: 10%;
 }
 
+.white-section {
+  background-color: white;
+}
+
 /************ IDS **************/
 
 #features {
-  background-color: white;
-  padding: 7% 15%;
   position: relative;
-  top: -180px;
 }
 
 #press {
   background-color: #ef8172;
-  text-align: center;
   padding-bottom: 3%;
 }
 
@@ -121,14 +156,21 @@ h3 {
 }
 
 #testimonials {
-  text-align: center;
   background-color: #ef8172;
-  color: white;
 }
 
-#title {
-  background-color: #ff4c68;
-  color: white;
-  padding-bottom: 3%;
-  position: relative;
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
 }
